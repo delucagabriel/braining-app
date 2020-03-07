@@ -31,6 +31,6 @@ Route.group(() => {
   Route.resource('/respostas', 'AnswerController').apiOnly()
   Route.resource('/history', 'HistoryController').apiOnly()
 
-}).middleware('auth')
+}).prefix('api/v1').middleware('auth')
 
 
